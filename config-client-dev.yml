@@ -1,5 +1,6 @@
 server:
-  port: 8004
+  port: 8009
 spring:
   application:
     name: producer-service
+word: 666
