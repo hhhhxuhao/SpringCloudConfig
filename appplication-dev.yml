@@ -1,13 +1,12 @@
 server:
-  port: 8001
+  port: 8004
 
+spring:
+  application:
+    name: producer-service
 eureka:
-  server:
-    wait-time-in-ms-when-sync-empty: 0
-  instance:
-    hostname: 127.0.0.1
   client:
-    register-with-eureka: false
-    fetch-registry: false
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://127.0.0.1:8001/eureka/
+  instance:
+    prefer-ip-address: true
