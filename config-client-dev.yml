@@ -1,3 +1,5 @@
 server:
   port: 8004
-word: 666
+spring:
+  application:
+    name: producer-service
